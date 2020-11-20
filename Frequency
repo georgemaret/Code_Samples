@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class HelloWorld {
+public static void main(String[] args)
+{
+char l;
+int i,k,count=0;
+Scanner user = new Scanner(System.in);
+System.out.print("enter the word\n");
+String n = user.next();
+n=n.toLowerCase();
+System.out.print("\nenter the letter whose frequency is to be determined\n");
+l = user.next().charAt(0);
+l=Character.toLowerCase(l);
+k=n.length();
+char string[] = n.toCharArray(); //converting string to character array
+for(i=0;i<k;i++)
+{
+if(l==string[i])
+{
+count++;
+}
+}
+System.out.print("\nThe frequency of that letter is\n");
+System.out.print(count);
+}
+}
