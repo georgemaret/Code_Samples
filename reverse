@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class HelloWorld
+{
+public static void main(String[] args) {
+String l;
+Scanner input = new Scanner(System.in);
+
+System.out.print("enter the word");
+String n = input.next();
+StringBuilder m = new StringBuilder(n);
+m = m.reverse();
+n = m.toString();
+System.out.print(n);
+}}
