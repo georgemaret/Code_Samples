@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class HelloWorld
+{
+public static void main(String[] args) {
+String l;
+Scanner input = new Scanner(System.in);
+System.out.print("enter the word");
+String n = input.next();
+StringBuilder m=new StringBuilder(n);
+m= m.reverse();
+l=m.toString();
+if(l.equals(n))
+{
+System.out.print("The word is a palindrome");
+}
+else
+{
+System.out.print("The word is not a palindrome");
+}
+}}
